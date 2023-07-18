@@ -15,5 +15,5 @@ na_cols=df.columns[df.isna().any()].tolist()
 print(na_cols)
 
 mv=pd.DataFrame(df[na_cols].isna().sum(), columns=['Number_missing'])
-mv['Percentage_missing']=np.round(100*mv['Number_missing']/len(df),2)
+mv['Percentage_missing']=np.round(100*mv['Number_missing']/len(df),2 #缺失比例
 print(mv)
